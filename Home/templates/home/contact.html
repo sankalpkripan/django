@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block start %}
+<div style="min-height: 90vh; background: linear-gradient(rgba(255,255,255,0.93), rgba(255,255,255,0.93)), url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; border-radius: 24px; box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10); padding: 40px 0;">
+    <div class="container" style="max-width: 600px; background: rgba(255,255,255,0.97); border-radius: 18px; box-shadow: 0 4px 24px rgba(67,206,162,0.10); padding: 36px 32px;">
+        <h1 class="text-center mb-3" style="font-weight: 800; color: #198754; letter-spacing: 1px;">Contact Us</h1>
+        <hr style="border-top: 2px solid #198754; width: 60px; margin: 0 auto 24px auto;">
+        <p class="text-center" style="font-size: 1.15rem; color: #444;">
+            We'd love to hear from you! Whether you have a question, feedback, or want to collaborate, feel free to reach out.
+        </p>
+        <div class="mb-4" style="font-size: 1.08rem; color: #333;">
+            <div class="mb-2">
+                <strong>Phone:</strong>
+                <a href="tel:9039910580" style="color: #198754; text-decoration: underline; margin-left: 8px;">9039910580</a>
+            </div>
+            <div class="mb-2">
+                <strong>Email:</strong>
+                <a href="mailto:sankalp.kripan@gmail.com" style="color: #f09819; text-decoration: underline; margin-left: 8px;">sankalp.kripan@gmail.com</a>
+            </div>
+            
+            <div class="mb-2">
+                <strong>Support Hours:</strong>
+                <span style="color: #555; margin-left: 8px;">Mon - Sun, 9:00 AM - 11:00 PM</span>
+            </div>
+        </div>
+        <form method="post" style="background: #f8f9fa; border-radius: 12px; padding: 18px 16px; box-shadow: 0 2px 8px rgba(25,135,84,0.07);">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="name" class="form-label" style="font-weight: 500;">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" required style="border-radius: 8px; border: 1px solid #ced4da;">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label" style="font-weight: 500;">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" required style="border-radius: 8px; border: 1px solid #ced4da;">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label" style="font-weight: 500;">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="3" required style="border-radius: 8px; border: 1px solid #ced4da;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success w-100" style="font-weight: 600; border-radius: 8px;">Send Message</button>
+        </form>
+        <div class="text-center mt-4" style="font-size: 1rem; color: #888;">
+            <a href="/" style="color: #198754; text-decoration: underline; font-weight: 500;">Home</a>
+            &nbsp;|&nbsp;
+            <a href="/about/" style="color: #f09819; text-decoration: underline; font-weight: 500;">About</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

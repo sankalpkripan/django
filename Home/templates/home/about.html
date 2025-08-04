@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block start %}
+<div style="min-height: 90vh; background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; border-radius: 24px; box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10); padding: 40px 0;">
+    <div class="container" style="max-width: 800px; background: rgba(255,255,255,0.95); border-radius: 18px; box-shadow: 0 4px 24px rgba(67,206,162,0.10); padding: 36px 32px;">
+        <h1 class="text-center mb-3" style="font-weight: 800; color: #198754; letter-spacing: 1px;">About Receipes World</h1>
+        <hr style="border-top: 2px solid #198754; width: 60px; margin: 0 auto 24px auto;">
+        <p class="text-center" style="font-size: 1.2rem; color: #444;">
+            <strong>Receipes World</strong> is your go-to platform for discovering, sharing, and creating delicious recipes from around the globe. Whether you're a home cook, a professional chef, or just starting your culinary journey, our community is here to inspire and support you.
+        </p>
+        <ul style="font-size: 1.08rem; color: #333; margin: 32px 0 24px 0; padding-left: 18px;">
+            <li><strong>Discover:</strong> Browse a wide variety of recipes, from quick snacks to gourmet meals, all contributed by passionate food lovers.</li>
+            <li><strong>Share:</strong> Add your own recipes with images and detailed descriptions to inspire others.</li>
+            <li><strong>Connect:</strong> Engage with a vibrant community, leave comments, and exchange cooking tips.</li>
+            <li><strong>Easy to Use:</strong> Simple, clean interface with powerful search and filter options.</li>
+            <li><strong>Secure:</strong> Your data and privacy are important to us. We use secure authentication and never share your information.</li>
+        </ul>
+        <div class="text-center mb-3">
+            <img src="https://img.icons8.com/color/96/chef-hat.png" alt="Chef Hat" style="height: 64px;">
+        </div>
+        <div class="text-center mb-4">
+            <a href="/receipes/" class="btn btn-success" style="font-weight: 600; border-radius: 10px; padding: 10px 32px; font-size: 1.1rem; box-shadow: 0 2px 8px rgba(25,135,84,0.10);">Explore Recipes</a>
+        </div>
+        <div class="text-center" style="font-size: 1rem; color: #888;">
+            <a href="/" style="color: #198754; text-decoration: underline; font-weight: 500;">Home</a>
+            &nbsp;|&nbsp;
+            <a href="/contact/" style="color: #f09819; text-decoration: underline; font-weight: 500;">Contact</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
